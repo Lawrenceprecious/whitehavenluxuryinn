@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Stay - WhiteHaven Luxury Inn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo.jpg" alt="logo" class="logo-image">
+                <span>WhiteHaven</span>
+            </div>
+            <div class="nav-menu">
+                <a href="home.html" class="nav-link">Home</a>
+                <a href="rooms.html" class="nav-link">Rooms</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="booking.html" class="nav-link">Book</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="btn btn-primary nav-btn" onclick="window.location.href='booking.html'">Book Now</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('images/lounge.jpg');">
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1>Book Your Stay</h1>
+            <p>Reserve your perfect room at WhiteHaven Luxury Inn</p>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-page">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-form-section">
+                    <div class="section-header">
+                        <h2>Reservation Details</h2>
+                        <div class="accent-line"></div>
+                    </div>
+
+                    <form id="bookingForm" class="booking-form-full" action="https://formspree.io/f/xrewlvry" method="post" >
+                        <!-- Guest Information --> 
+                        <div class="form-section">
+                            <h3>Guest Information</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Stay Details -->
+                        <div class="form-section">
+                            <h3>Stay Details</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="checkIn">Check-in Date *</label>
+                                    <input type="date" id="checkIn" name="checkIn" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="checkOut">Check-out Date *</label>
+                                    <input type="date" id="checkOut" name="checkOut" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="guests">Number of Guests *</label>
+                                    <select id="guests" name="guests" required>
+                                        <option value="">Select number of guests</option>
+                                        <option value="1">1 Guest</option>
+                                        <option value="2">2 Guests</option>
+                                        <option value="3">3 Guests</option>
+                                        <option value="4">4 Guests</option>
+                                        <option value="5">5 Guests</option>
+                                        <option value="6">6 Guests</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="roomType">Room Type *</label>
+                                    <select id="roomType" name="roomType" required>
+                                        <option value="">Select room type</option>
+                                        <option value="standard">Standard Room - ₦37,000/night</option>
+                                        <option value="deluxe">Deluxe Room - ₦45,000/night</option>
+                                        <option value="suite">Premium Suite - ₦73,000/night</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="roomCount">Number of Rooms *</label>
+                                    <select id="roomCount" name="roomCount" required>
+                                        <option value="1">1 Room</option>
+                                        <option value="2">2 Rooms</option>
+                                        <option value="3">3 Rooms</option>
+                                        <option value="4">4 Rooms</option>
+                                        <option value="5">5 Rooms</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Special Requests -->
+                        <div class="form-section">
+                            <h3>Special Requests</h3>
+                            <div class="form-group">
+                                <label for="requests">Any Special Requests or Preferences?</label>
+                                <textarea id="requests" name="requests" rows="5" placeholder="Let us know if you have any special requirements..."></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Preferences -->
+                        <div class="form-section">
+                            <h3>Preferences</h3>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="breakfast" id="breakfast">
+                                    <span>Add complimentary breakfast</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="parking" id="parking">
+                                    <span>Reserve valet parking</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="airport" id="airport">
+                                    <span>Arrange airport transfer</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block btn-large">Complete Booking Request</button>
+                    </form>
+                </div>
+
+                <!-- Booking Summary -->
+                <div class="booking-summary-section">
+                    <div class="booking-summary">
+                        <h3>Booking Summary</h3>
+                        <div class="summary-item">
+                            <span>Check-in:</span>
+                            <span id="summaryCheckIn">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Check-out:</span>
+                            <span id="summaryCheckOut">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Room Type:</span>
+                            <span id="summaryRoom">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Number of Rooms:</span>
+                            <span id="summaryRoomCount">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Number of Nights:</span>
+                            <span id="summaryNights">-</span>
+                        </div>
+                        <div class="summary-divider"></div>
+                        <div class="summary-item total">
+                            <span>Total Price:</span>
+                            <span id="summaryTotal">₦0</span>
+                        </div>
+                    </div>
+
+                    <!-- Room Info Card -->
+                    <div class="room-info-card">
+                        <h4>Room Information</h4>
+                        <div id="roomInfoContent">
+                            <p>Select a room type to see details</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="contact-info-card">
+                        <h4>Need Help?</h4>
+                        <p>Contact our booking team:</p>
+                        <ul>
+                            <li><strong>Phone:</strong> +2348177448804</li>
+                            <li><strong>WhatsApp:</strong> 08160415393</li>
+                            <li><strong>Email:</strong> Whitehavenluxinn@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <div class="accent-line"></div>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>What is your cancellation policy?</h4>
+                    <p>Cancellations made 48 hours before check-in are eligible for a full refund. Cancellations within 48 hours may incur a charge.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Is breakfast included?</h4>
+                    <p>Breakfast is complimentary for all room types. Special dietary requirements can be arranged with advance notice.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What time is check-in and check-out?</h4>
+                    <p>Standard check-in is 2:00 PM and check-out is 11:00 AM. Early check-in and late check-out available upon request.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Is parking available?</h4>
+                    <p>Yes, complimentary parking is available for all guests. Valet parking service is also available for an additional fee.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you offer airport transfers?</h4>
+                    <p>Yes, we offer airport transfer services. Please arrange this during booking or contact our concierge team.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I modify my reservation?</h4>
+                    <p>Yes, modifications can be made up to 48 hours before check-in. Contact our booking team for assistance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo2.jpg" alt="logo" class="logo-image">
+                        <span>WhiteHaven Luxury inn</span>
+                    </div>
+                    <p>Experience luxury beyond expectations at Port Harcourt's premier five-star destination.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="https://Instagram.com/Whitehavenluxuryinn?igsh=cGEwOXdiYXJraDUO">Instagram</a></li>
+                        <li><a href="https://vm.tiktok.com/ZS96P27wtJWMg-n7Ezk">TikTok</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>Phone: +2348177448804</li>
+                        <li>WhatsApp: 08160415393</li>
+                        <li>Email: Whitehavenluxinn@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 WhiteHaven Luxury Inn. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

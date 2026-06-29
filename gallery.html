@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - WhiteHaven Luxury Inn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo.jpg" alt="logo" class="logo-image">
+                <span>WhiteHaven Luxury inn</span>
+            </div>
+            <div class="nav-menu">
+                <a href="home.html" class="nav-link">Home</a>
+                <a href="rooms.html" class="nav-link">Rooms</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="booking.html" class="nav-link">Book</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="btn btn-primary nav-btn" onclick="window.location.href='booking.html'">Book Now</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('images/gallery\ section.jpg');">
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1>Gallery</h1>
+            <p>Explore the beauty and elegance of WhiteHaven Luxury Inn</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-page">
+        <div class="container">
+            <div class="section-header">
+                <h2>Photo Gallery</h2>
+                <div class="accent-line"></div>
+                <p>Discover the luxury and elegance that awaits you at WhiteHaven</p>
+            </div>
+
+            <!-- Gallery Filter -->
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="rooms">Rooms</button>
+                <button class="filter-btn" data-filter="facilities">Facilities</button>
+                <button class="filter-btn" data-filter="dining">Dining</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Rooms -->
+                <div class="gallery-item" data-category="rooms">
+                    <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=500&h=400&fit=crop" alt="Luxury Bedroom">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Luxury Bedroom</h3>
+                            <p>Standard Room</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="rooms">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=500&h=400&fit=crop" alt="Deluxe Room">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Deluxe Room</h3>
+                            <p>Premium Accommodation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="rooms">
+                    <img src="images/luxury room.jpg" alt="Premium Suite">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Premium Suite</h3>
+                            <p>Luxury Living</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Facilities -->
+                <div class="gallery-item" data-category="facilities">
+                    <img src="https://images.unsplash.com/photo-1576610616656-d3aa5d1f4534?w=500&h=400&fit=crop" alt="Swimming Pool">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Swimming Pool</h3>
+                            <p>Olympic-size pool</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facilities">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&h=400&fit=crop" alt="Fitness Center">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Fitness Center</h3>
+                            <p>State-of-the-art gym</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Dining -->
+                <div class="gallery-item" data-category="dining">
+                    <img src="images/fine dinning.jpg" alt="Fine Dining">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Fine Dining</h3>
+                            <p>Restaurant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="dining">
+                    <img src="images/rooftop bar.jpg" alt="Rooftop Bar">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Rooftop Bar</h3>
+                            <p>Panoramic views</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="dining">
+                    <img src="images/lounge.jpg" alt="Lounge">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Toby's Lounge</h3>
+                            <p>Premium beverages</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facilities">
+                    <img src="images/Front view of hotel.jpg" alt="parking space">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Parking Area</h3>
+                            <P>Safe and Secure</P>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Experience Luxury?</h2>
+                <p>Book your stay at WhiteHaven Luxury Inn today</p>
+                <button class="btn btn-primary btn-large" onclick="window.location.href='booking.html'">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo2.jpg" alt="logo" class="logo-image">
+                        <span>WhiteHaven Luxury inn</span>
+                    </div>
+                    <p>Experience luxury beyond expectations at Port Harcourt's premier five-star destination.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <ul>
+                         <li><a href="https://Instagram.com/Whitehavenluxuryinn?igsh=cGEwOXdiYXJraDUO">Instagram</a></li>
+                        <li><a href="https://vm.tiktok.com/ZS96P27wtJWMg-n7Ezk">TikTok</a></li> 
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>Phone: +2348177448804</li>
+                        <li>WhatsApp: 08160415393</li>
+                        <li>Email: Whitehavenluxinn@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 WhiteHaven Luxury Inn. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

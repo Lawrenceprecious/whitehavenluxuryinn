@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhiteHaven Luxury Inn - Premium Five-Star Hotel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo.jpg" alt="logo" class="logo-image">
+                <span>WhiteHaven luxury inn</span>
+            </div>
+            <div class="nav-menu">
+                <a href="home.html" class="nav-link">Home</a>
+                <a href="rooms.html" class="nav-link">Rooms</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="booking.html" class="nav-link">Book</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="btn btn-primary nav-btn" onclick="window.location.href='booking.html'">Book Now</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background" style="background-image: url('images/luxury\ room\ background.jpg');">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-in">Experience Luxury Beyond Expectations</h1>
+            <p class="hero-subtitle animate-fade-in">Luxury Comfort, Unbeatable Value</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="window.location.href='booking.html'">Book Your Stay</button>
+                <button class="btn btn-outline" onclick="window.location.href='rooms.html'">Explore Rooms</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Welcome to WhiteHaven Luxury Inn</h2>
+                <div class="accent-line"></div>
+                <p>Located in the heart of Port Harcourt, WhiteHaven Luxury Inn stands as a beacon of elegance and sophistication. Our commitment to excellence ensures every guest experiences unparalleled luxury, exceptional service, and modern amenities that redefine five-star hospitality.</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value">50+</div>
+                    <div class="stat-label">Luxury Accommodation</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">24/7</div>
+                    <div class="stat-label">Exceptional Service</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">12+</div>
+                    <div class="stat-label">Modern Amenities</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">99%</div>
+                    <div class="stat-label">Guest Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Rooms Section -->
+    <section class="featured-rooms">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Featured Rooms</h2>
+                <div class="accent-line"></div>
+                <p>Exquisitely designed spaces for your ultimate comfort</p>
+            </div>
+
+            <div class="rooms-grid">
+                <div class="room-card animate-fade-in-up">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=500&h=400&fit=crop" alt="Standard Room">
+                        <div class="room-price">₦37,000</div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Standard Room</h3>
+                        <ul class="room-features">
+                            <li><i class="fas fa-check"></i> Complimentary breakfast</li>
+                            <li><i class="fas fa-check"></i> Modern design</li>
+                            <li><i class="fas fa-check"></i> City view</li>
+                        </ul>
+                        <button class="btn btn-primary btn-block" onclick="window.location.href='booking.html'">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="room-card animate-fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=500&h=400&fit=crop" alt="Deluxe Room">
+                        <div class="room-price">₦45,000</div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Deluxe Room</h3>
+                        <ul class="room-features">
+                            <li><i class="fas fa-check"></i> Spacious luxury room</li>
+                            <li><i class="fas fa-check"></i> Complimentary breakfast</li>
+                            <li><i class="fas fa-check"></i> Marble bathroom</li>
+                        </ul>
+                        <button class="btn btn-primary btn-block" onclick="window.location.href='booking.html'">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="room-card animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="room-image">
+                        <img src="images/luxury room.jpg" alt="Premium Suite">
+                        <div class="room-price">₦73,000</div>
+                    </div>
+                    <div class="room-content">
+                        <h3>Premium Suite</h3>
+                        <ul class="room-features">
+                            <li><i class="fas fa-check"></i> Elegant interior</li>
+                            <li><i class="fas fa-check"></i> Luxury experience</li>
+                            <li><i class="fas fa-check"></i> Separate living area</li>
+                        </ul>
+                        <button class="btn btn-primary btn-block" onclick="window.location.href='booking.html'">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="rooms.html" class="btn btn-primary">View All Rooms</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section class="offers">
+        <div class="container">
+            <div class="section-header light">
+                <h2>Special Offers</h2>
+                <div class="accent-line"></div>
+            </div>
+
+            <div class="offers-grid">
+                <div class="offer-card animate-fade-in-up">
+                    <div class="offer-badge">Save 20%</div>
+                    <h3>5-Day Special</h3>
+                    <p>Pay for 5 days and get 1 extra day free</p>
+                </div>
+
+                <div class="offer-card animate-fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="offer-badge">Flexible</div>
+                    <h3>Late Check-In</h3>
+                    <p>Extended check-in until 6 PM at no extra cost</p>
+                </div>
+
+                <div class="offer-card animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="offer-badge">Save 15%</div>
+                    <h3>Midweek Discount</h3>
+                    <p>Special rates for Monday to Thursday stays</p>
+                </div>
+
+                <div class="offer-card animate-fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="offer-badge">Exclusive</div>
+                    <h3>Weekend Escape</h3>
+                    <p>Premium weekend packages with complimentary upgrades</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Guest Reviews</h2>
+                <div class="accent-line"></div>
+                <p>What our guests say about their experience</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card animate-fade-in-up">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"WhiteHaven exceeded all my expectations. The service was impeccable and the rooms are absolutely stunning."</p>
+                    <p class="testimonial-author">Chioma Okonkwo</p>
+                    <p class="testimonial-role">Business Executive</p>
+                </div>
+
+                <div class="testimonial-card animate-fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"A truly luxurious experience at unbeatable value. The staff went above and beyond to make our stay memorable."</p>
+                    <p class="testimonial-author">David Adeyemi</p>
+                    <p class="testimonial-role">Leisure Traveler</p>
+                </div>
+
+                <div class="testimonial-card animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Perfect for business trips and special occasions. The attention to detail is remarkable."</p>
+                    <p class="testimonial-author">Ngozi Eze</p>
+                    <p class="testimonial-role">Corporate Client</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo2.jpg" alt="logo" class="logo-image">
+                        <span>WhiteHaven Luxury inn</span>
+                    </div>
+                    <p>Experience luxury beyond expectations at Port Harcourt's premier five-star destination.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="https://Instagram.com/Whitehavenluxuryinn?igsh=cGEwOXdiYXJraDUO">Instagram</a></li>
+                        <li><a href="https://vm.tiktok.com/ZS96P27wtJWMg-n7Ezk">TikTok</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>Phone: +2348177448804</li>
+                        <li>Whatsapp: 08160415393</li>
+                        <li>Email:Whitehavenluxinn@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 WhiteHaven Luxury Inn. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

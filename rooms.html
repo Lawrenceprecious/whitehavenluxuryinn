@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Rooms - WhiteHaven Luxury Inn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo.jpg" alt="`logo" class="logo-image">
+                <span>WhiteHaven Luxury inn</span>
+            </div>
+            <div class="nav-menu">
+                <a href="home.html" class="nav-link">Home</a>
+                <a href="rooms.html" class="nav-link">Rooms</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="booking.html" class="nav-link">Book</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="btn btn-primary nav-btn" onclick="window.location.href='booking.html'">Book Now</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&h=400&fit=crop');">
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1>Our Rooms</h1>
+            <p>Exquisitely designed spaces for your ultimate comfort</p>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="rooms-page">
+        <div class="container">
+            <div class="section-header">
+                <h2>Choose Your Perfect Room</h2>
+                <div class="accent-line"></div>
+            </div>
+
+            <div class="rooms-grid-full">
+                <!-- Standard Room -->
+                <div class="room-card-full animate-fade-in-up">
+                    <div class="room-image-full">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&h=400&fit=crop" alt="Standard Room">
+                    </div>
+                    <div class="room-details-full">
+                        <div class="room-header">
+                            <h3>Standard Room</h3>
+                            <div class="room-price-large">₦37,000<span>/night</span></div>
+                        </div>
+                        <p class="room-description">Comfortable and elegantly appointed, our Standard Rooms offer the perfect blend of luxury and value. Ideal for business travelers and leisure guests seeking quality accommodation.</p>
+                        <h4>Room Features:</h4>
+                        <ul class="room-features-full">
+                            <li><i class="fas fa-check"></i> Complimentary breakfast</li>
+                            <li><i class="fas fa-check"></i> Modern design and decor</li>
+                            <li><i class="fas fa-check"></i> City view</li>
+                            <li><i class="fas fa-check"></i> 32" Smart TV</li>
+                            <li><i class="fas fa-check"></i> Premium bedding</li>
+                            <li><i class="fas fa-check"></i> Air conditioning</li>
+                            <li><i class="fas fa-check"></i> Private bathroom</li>
+                            <li><i class="fas fa-check"></i> Free WiFi</li>
+                        </ul>
+                        <button class="btn btn-primary btn-block" onclick="window.location.href='booking.html'">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Deluxe Room -->
+                <div class="room-card-full animate-fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="room-image-full">
+                        <img src="images/luxury room3.jpg" alt="Deluxe Room">
+                    </div>
+                    <div class="room-details-full">
+                        <div class="room-header">
+                            <h3>Deluxe Room</h3>
+                            <div class="room-price-large">₦45,000<span>/night</span></div>
+                        </div>
+                        <p class="room-description">Experience enhanced luxury in our spacious Deluxe Rooms. With premium furnishings and upscale amenities, these rooms provide the perfect sanctuary for discerning travelers.</p>
+                        <h4>Room Features:</h4>
+                        <ul class="room-features-full">
+                            <li><i class="fas fa-check"></i> Spacious luxury room</li>
+                            <li><i class="fas fa-check"></i> Complimentary breakfast</li>
+                            <li><i class="fas fa-check"></i> Marble bathroom</li>
+                            <li><i class="fas fa-check"></i> Work desk and chair</li>
+                            <li><i class="fas fa-check"></i> Premium toiletries</li>
+                            <li><i class="fas fa-check"></i> Bathrobe and slippers</li>
+                            <li><i class="fas fa-check"></i> Minibar</li>
+                            <li><i class="fas fa-check"></i> 24-hour room service</li>
+                        </ul>
+                        <button class="btn btn-primary btn-block" onclick="window.location.href='booking.html'">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Premium Suite -->
+                <div class="room-card-full animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="room-image-full">
+                        <img src="images/luxury room2.jpg" alt="Premium Suite">
+                    </div>
+                    <div class="room-details-full">
+                        <div class="room-header">
+                            <h3>Premium Suite</h3>
+                            <div class="room-price-large">₦73,000<span>/night</span></div>
+                        </div>
+                        <p class="room-description">Indulge in ultimate luxury with our Premium Suite. Featuring elegant interiors, separate living areas, and exclusive amenities, this is the pinnacle of luxury accommodation.</p>
+                        <h4>Room Features:</h4>
+                        <ul class="room-features-full">
+                            <li><i class="fas fa-check"></i> Elegant interior design</li>
+                            <li><i class="fas fa-check"></i> Luxury experience</li>
+                            <li><i class="fas fa-check"></i> Separate living area</li>
+                            <li><i class="fas fa-check"></i> Premium minibar</li>
+                            <li><i class="fas fa-check"></i> Concierge service</li>
+                            <li><i class="fas fa-check"></i> Jacuzzi bathtub</li>
+                            <li><i class="fas fa-check"></i> Panoramic views</li>
+                            <li><i class="fas fa-check"></i> Priority room service</li>
+                        </ul>
+                        <button class="btn btn-primary btn-block" onclick="window.location.href='booking.html'">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Amenities Section -->
+    <section class="room-amenities">
+        <div class="container">
+            <div class="section-header">
+                <h2>Room Amenities</h2>
+                <div class="accent-line"></div>
+            </div>
+
+            <div class="amenities-grid">
+                <div class="amenity-item">
+                    <i class="fas fa-wifi"></i>
+                    <h4>Free WiFi</h4>
+                    <p>High-speed internet in all rooms</p>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-tv"></i>
+                    <h4>Smart TV</h4>
+                    <p>Streaming and entertainment</p>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-wind"></i>
+                    <h4>Air Conditioning</h4>
+                    <p>Climate control</p>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-bath"></i>
+                    <h4>Premium Bathroom</h4>
+                    <p>Luxury toiletries included</p>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-bed"></i>
+                    <h4>Premium Bedding</h4>
+                    <p>Egyptian cotton sheets</p>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-concierge-bell"></i>
+                    <h4>24/7 Room Service</h4>
+                    <p>Available around the clock</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo2.jpg" alt="logo" class="logo-image">
+                        <span>WhiteHaven</span>
+                    </div>
+                    <p>Experience luxury beyond expectations at Port Harcourt's premier five-star destination.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="https://Instagram.com/Whitehavenluxuryinn?igsh=cGEwOXdiYXJraDUO">Instagram</a></li>
+                        <li><a href="https://vm.tiktok.com/ZS96P27wtJWMg-n7Ezk">TikTok</a></li>
+                    </ul>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>Phone: +2348177448804</li>
+                        <li>WhatsApp: 08160415393</li>
+                        <li>Email: Whitehavenluxinn@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 WhiteHaven Luxury Inn. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

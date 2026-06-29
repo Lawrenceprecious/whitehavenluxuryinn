@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - WhiteHaven Luxury Inn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo.jpg" alt="logo" class="logo-image">
+                <span>WhiteHaven Luxury inn</span>
+            </div>
+            <div class="nav-menu">
+                <a href="home.html" class="nav-link">Home</a>
+                <a href="rooms.html" class="nav-link">Rooms</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="booking.html" class="nav-link">Book</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="btn btn-primary nav-btn" onclick="window.location.href='booking.html'">Book Now</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&h=400&fit=crop');">
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1>Get in Touch</h1>
+            <p>We're here to help and answer any question you might have</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-page">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <div class="section-header">
+                        <h2>Send us a Message</h2>
+                        <div class="accent-line"></div>
+                    </div>
+
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Full Name *</label>
+                                <input type="text" id="contactName" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address *</label>
+                                <input type="email" id="contactEmail" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactPhone">Phone Number</label>
+                                <input type="tel" id="contactPhone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactSubject">Subject *</label>
+                                <input type="text" id="contactSubject" name="subject" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Message *</label>
+                            <textarea id="contactMessage" name="message" rows="6" required placeholder="Tell us how we can help..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <div class="section-header">
+                        <h2>Contact Information</h2>
+                        <div class="accent-line"></div>
+                    </div>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h3>Phone</h3>
+                            <p>+2348177448804</p>
+                            <p class="small">Available Monday - Sunday, 8:00 AM - 10:00 PM</p>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-method-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <h3>WhatsApp</h3>
+                            <p>08160415393</p>
+                            <p class="small">Quick responses available 24/7</p>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email</h3>
+                            <p>Whitehavenluxinn@gmail.com</p>
+                            <p class="small">Response within 24 hours</p>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Address</h3>
+                            <p>7 Solomon Woko Close</p>
+                            <p>Eneka Link Road, Off Chief G.U. Ake Road</p>
+                            <p>Port Harcourt, Rivers State, Nigeria</p>
+                        </div>
+                    </div>
+
+                    <!-- Office Hours -->
+                    <div class="office-hours">
+                        <h3>Office Hours</h3>
+                        <ul>
+                            <li>
+                                <span>Monday - Friday:</span>
+                                <span>8:00 AM - 6:00 PM</span>
+                            </li>
+                            <li>
+                                <span>Saturday:</span>
+                                <span>9:00 AM - 4:00 PM</span>
+                            </li>
+                            <li>
+                                <span>Sunday:</span>
+                                <span>10:00 AM - 3:00 PM</span>
+                            </li>
+                            <li>
+                                <span>Holidays:</span>
+                                <span>24/7 Emergency Support</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Find Us on the Map</h2>
+                <div class="accent-line"></div>
+            </div>
+
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.288470563785!2d7.021541699999998!3d4.8912911999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cfc6d820548d%3A0x42c0b238e7ededc7!2sWhiteHaven%20Luxury%20Inn!5e0!3m2!1sen!2sng!4v1782762352953!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments Section -->
+    <section class="departments-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Our Departments</h2>
+                <div class="accent-line"></div>
+            </div>
+
+            <div class="departments-grid">
+                <div class="department-card">
+                    <h3>Reservations</h3>
+                    <p>For booking inquiries and reservations</p>
+                    <p class="contact-detail">
+                        <i class="fas fa-phone"></i>
+                        +2348177448804
+                    </p>
+                    <p class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        reservations@whitehavenluxinn.com
+                    </p>
+                </div>
+
+                <div class="department-card">
+                    <h3>Front Desk</h3>
+                    <p>For guest services and assistance</p>
+                    <p class="contact-detail">
+                        <i class="fas fa-phone"></i>
+                        +2348177448804
+                    </p>
+                    <p class="contact-detail">
+                        <i class="fab fa-whatsapp"></i>
+                        08160415393
+                    </p>
+                </div>
+
+                <div class="department-card">
+                    <h3>Events & Catering</h3>
+                    <p>For weddings, conferences, and events</p>
+                    <p class="contact-detail">
+                        <i class="fas fa-phone"></i>
+                        +2348177448804
+                    </p>
+                    <p class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        events@whitehavenluxinn.com
+                    </p>
+                </div>
+
+                <div class="department-card">
+                    <h3>General Inquiry</h3>
+                    <p>For general questions and feedback</p>
+                    <p class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        Whitehavenluxinn@gmail.com
+                    </p>
+                    <p class="contact-detail">
+                        <i class="fas fa-clock"></i>
+                        24/7 Support
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo2.jpg" alt="logo" class="logo-image">
+                        <span>WhiteHaven Luxury inn</span>
+                    </div>
+                    <p>Experience luxury beyond expectations at Port Harcourt's premier five-star destination.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="https://Instagram.com/Whitehavenluxuryinn?igsh=cGEwOXdiYXJraDUO">Instagram</a></li>
+                        <li><a href="https://vm.tiktok.com/ZS96P27wtJWMg-n7Ezk">TikTok</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>Phone: +2348177448804</li>
+                        <li>WhatsApp: 08160415393</li>
+                        <li>Email: Whitehavenluxinn@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 WhiteHaven Luxury Inn. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
