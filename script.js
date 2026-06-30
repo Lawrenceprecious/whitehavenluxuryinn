@@ -98,7 +98,7 @@ if (bookingForm) {
         const checkOut =
     document.getElementById('checkOut') .value;
     
-    if (checkIn && checkOut $$ new 
+    if (checkIn && checkOut && new 
     Date(checkIn) >= new Date(checkOut)) {
             e.preventDefault();
             showNotification('Check-out date must be after check-in date', 'error');
