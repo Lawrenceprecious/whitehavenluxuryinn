@@ -104,6 +104,8 @@ if (bookingForm) {
             showNotification('Check-out date must be after check-in date', 'error');
             return;
     }
+
+    showNotification('Thank you! Your booking has been submitted successfully.', 'success');
     
         showNotification('processing your booking...','info');
 });
